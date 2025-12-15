@@ -1,0 +1,138 @@
+#hero {
+  height: 590px;
+  background: linear-gradient(
+      to right,
+      rgba(0, 113, 188, 0.8),
+      rgba(0, 113, 188, 0.4)
+    ),
+    url("../../../content/images/hero-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .hero-title {
+  font-size: 3.125rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+#hero .hero-text {
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.725rem;
+}
+
+#hero .container {
+  text-align: center;
+}
+
+.text-start {
+  text-align: left !important;
+}
+
+.Homebutton {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 0.875rem 2rem;
+  border-radius: 0.3125rem;
+  transition: all 0.3s ease;
+}
+
+#hero .container .Homebutton:hover {
+  background: #fff;
+  color: #0071bc;
+}
+
+#intro {
+  padding: 2.5rem 0;
+}
+
+#intro .subtitle {
+  font-weight: 500;
+  font-size: 1.375rem;
+  line-height: 1.5rem;
+}
+#intro .title {
+  font-weight: 400;
+  font-size: 2.1875rem;
+  line-height: 3.28125rem;
+  margin-bottom: 2.625rem;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 2.1875rem;
+  line-height: 3.28125rem;
+}
+
+.section-subtitle {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.topic {
+  width: 100%;
+  height: 227px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.topic_front,
+.topic_back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ebebeb;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.topic_back {
+  transform: rotateY(180deg);
+  background-color: #0071bc;
+  color: #fff;
+  text-align: center;
+}
+
+.topic:hover .topic_front {
+  transform: rotateY(180deg);
+}
+
+.topic:hover .topic_back {
+  transform: rotateY(0deg);
+}
+
+.topic_img {
+  width: 78px;
+  height: 78px;
+  margin-bottom: 1.5625rem;
+}
+
+.topic_desc {
+  padding: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
+}
+
+#topics {
+  margin-bottom: 2.5rem;
+}

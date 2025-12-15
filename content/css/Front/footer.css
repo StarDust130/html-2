@@ -1,0 +1,205 @@
+.footer {
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+#footer-box{
+    padding-right: 3%!important;
+    padding-left: 3%!important;
+}
+
+.brand-section {
+    max-width: 100%;
+}
+
+#brand-column{
+    min-width: 21% !important;
+}
+.footer-blocks{
+    min-width: 11% !important;
+}
+#contact-column{
+    min-width: 17% !important;
+}
+
+#contact-column a, #contact-column address{
+    color: #666;
+    font-size: 0.91rem;
+    font-weight: 500;
+}
+
+#contact-column a{
+  color: #0071BC;
+}
+
+#contact-column a:hover{
+    color: #005a9e;
+  }
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.brand-text {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.brand-text:hover {
+    color: var(--bs-primary);
+}
+
+.footer-description {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #666;
+    line-height: 1.6;
+}
+
+.footer-title {
+    font-size: 1.01rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: .7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.footer-links li {
+    margin-bottom: .2rem;
+}
+
+.footer-link {
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s linear;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+}
+
+.footer-link:hover {
+    color: #0071BC !important;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.contact-info i {
+    color: #29ABE2;
+    margin-top: 0.25rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.social-icon i {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.twitter {
+    background-color: #1da1f2;
+}
+
+.social-icon.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+.social-icon.youtube {
+    background-color: #ff0000;
+}
+
+.footer-copyright {
+    padding: 1.25rem 0;
+    font-size: 0.9rem;
+    background: rgb(0, 113, 188);
+    background: linear-gradient(90deg, rgba(41, 171, 226, 1) 0%, rgba(0, 113, 188, 1) 100%);
+    color: #fff;
+}
+
+@media (min-width: 992px) {  
+    #about-column, #partners-column, #terms-column{
+      margin-left: 5px!important;
+    }
+  }
+
+@media (max-width: 991.98px) {
+    .brand-section {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-title {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .footer-links {
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+    .contact-info li {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1088px) {
+    #footer-box{
+        padding-left: 1.9%!important;
+    }
+}
