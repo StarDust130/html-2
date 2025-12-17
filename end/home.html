@@ -48,318 +48,335 @@
 
 			<div class="collapse navbar-collapse justify-content-between" id="navTop">
 				<ul class="navbar-nav align-items-center gap-3">
+					<!-- BROWSE MEGA MENU - Design 1: Hero Cards Layout -->
 					<li class="nav-item mega-menu-item">
 						<a class="nav-link" href="/search/articles">Browse </a>
-						<div class="mega-menu mega-menu-compact">
-							<div class="mega-menu-content">
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/articles"><i class="fas fa-newspaper"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Articles</span><span
-														class="menu-item-desc">In-depth articles and
-														analysis</span></span> <span class="badge">2.5K+</span></a></li>
-										<li><a href="/blogs"><i class="fas fa-blog"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Blogs</span><span
-														class="menu-item-desc">Personal stories and
-														insights</span></span> <span class="badge">1.8K+</span></a></li>
-										<li><a href="/stories"><i class="fas fa-book"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Stories</span><span
-														class="menu-item-desc">Narrative content and
-														experiences</span></span> <span class="badge">950+</span></a>
-										</li>
-										<li><a href="/tutorials"><i class="fas fa-graduation-cap"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Tutorials</span><span
-														class="menu-item-desc">Step-by-step guides</span></span> <span
-													class="badge">620+</span></a>
-										</li>
-										<li><a href="/reviews"><i class="fas fa-star-half-alt"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Reviews</span><span
-														class="menu-item-desc">Product and service reviews</span></span>
-												<span class="badge">420+</span></a></li>
-										<li><a href="/interviews"><i class="fas fa-microphone"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Interviews</span><span
-														class="menu-item-desc">Expert conversations</span></span> <span
-													class="badge">280+</span></a></li>
-									</ul>
+						<div class="mega-menu mega-browse">
+							<div class="browse-grid">
+								<!-- Featured Hero Card -->
+								<!-- Desktop Hero Card -->
+								<div class="browse-hero d-none d-lg-flex">
+									<div class="browse-hero-content">
+										<span class="browse-hero-badge"><i class="fas fa-fire"></i> Featured</span>
+										<h3>Discover Amazing Content</h3>
+										<p>Explore thousands of articles, blogs, and stories from talented writers
+											worldwide</p>
+										<a href="/explore" class="browse-hero-btn">Explore All <i
+												class="fas fa-arrow-right"></i></a>
+									</div>
+									<div class="browse-hero-visual">
+										<div class="browse-hero-circles">
+											<span></span><span></span><span></span>
+										</div>
+									</div>
 								</div>
-								<div class="mega-menu-column">
-									<div class="mega-menu-featured">
-										<a href="/featured/top-rated" class="featured-item">
-											<div class="featured-icon"><i class="fas fa-star"></i></div>
-											<div>
-												<strong>Top Rated</strong>
-												<p>Most popular content this month</p>
+								<!-- Mobile header, only visible on mobile -->
+								<div class="d-block d-lg-none px-3 py-2">
+									<h4 class="mb-2 text-center fw-semibold">Discover Amazing Content</h4>
+								</div>
+								<!-- Content Types -->
+								<div class="browse-types">
+									<a href="/articles" class="browse-type-card">
+										<div class="browse-type-icon"><i class="fas fa-newspaper"></i></div>
+										<h4>Articles</h4>
+										<span class="browse-type-count">2.5K+</span>
+									</a>
+									<a href="/blogs" class="browse-type-card">
+										<div class="browse-type-icon"><i class="fas fa-blog"></i></div>
+										<h4>Blogs</h4>
+										<span class="browse-type-count">1.8K+</span>
+									</a>
+									<a href="/stories" class="browse-type-card">
+										<div class="browse-type-icon"><i class="fas fa-book"></i></div>
+										<h4>Stories</h4>
+										<span class="browse-type-count">950+</span>
+									</a>
+									<a href="/tutorials" class="browse-type-card">
+										<div class="browse-type-icon"><i class="fas fa-graduation-cap"></i></div>
+										<h4>Tutorials</h4>
+										<span class="browse-type-count">620+</span>
+									</a>
+									<a href="/reviews" class="browse-type-card">
+										<div class="browse-type-icon"><i class="fas fa-star-half-alt"></i></div>
+										<h4>Reviews</h4>
+										<span class="browse-type-count">420+</span>
+									</a>
+									<a href="/interviews" class="browse-type-card">
+										<div class="browse-type-icon"><i class="fas fa-microphone"></i></div>
+										<h4>Interviews</h4>
+										<span class="browse-type-count">280+</span>
+									</a>
+								</div>
+								<!-- Quick Actions -->
+								<div class="browse-actions">
+									<a href="/trending" class="browse-action"><i class="fas fa-fire-alt"></i>
+										Trending</a>
+									<a href="/top-rated" class="browse-action"><i class="fas fa-star"></i> Top Rated</a>
+									<a href="/new" class="browse-action"><i class="fas fa-magic"></i> New</a>
+									<a href="/editors-pick" class="browse-action"><i class="fas fa-award"></i> Editor's
+										Pick</a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- MANAGE MEGA MENU - Design 2: Dashboard Style -->
+					<li class="nav-item mega-menu-item">
+						<a class="nav-link" href="/manage">Manage</a>
+						<div class="mega-menu mega-manage-light">
+							<div class="manage-light-container">
+
+								<div class="manage-column">
+									<h6 class="column-header">Creation Suite</h6>
+									<div class="menu-group">
+										<a href="/post-new" class="menu-link-item">
+											<div class="icon-box blue"><i class="fas fa-pen-nib"></i></div>
+											<div class="text-box">
+												<span class="link-title">Write New Post</span>
+												<span class="link-desc">Start a blog, article, or story</span>
 											</div>
 										</a>
-										<a href="/featured/trending" class="featured-item">
-											<div class="featured-icon"><i class="fas fa-fire"></i></div>
-											<div>
-												<strong>Trending Now</strong>
-												<p>What's hot and viral today</p>
+										<a href="/drafts" class="menu-link-item">
+											<div class="icon-box gray"><i class="fas fa-file-signature"></i></div>
+											<div class="text-box">
+												<span class="link-title">Drafts</span>
+												<span class="link-desc">Continue unfinished work</span>
 											</div>
 										</a>
-										<a href="/featured/editors-pick" class="featured-item">
-											<div class="featured-icon"><i class="fas fa-thumbs-up"></i></div>
-											<div>
-												<strong>Editor's Pick</strong>
-												<p>Handpicked quality content</p>
-											</div>
-										</a>
-										<a href="/featured/new-releases" class="featured-item">
-											<div class="featured-icon"><i class="fas fa-rocket"></i></div>
-											<div>
-												<strong>New Releases</strong>
-												<p>Fresh content just published</p>
+										<a href="/media" class="menu-link-item">
+											<div class="icon-box purple"><i class="fas fa-images"></i></div>
+											<div class="text-box">
+												<span class="link-title">Media Library</span>
+												<span class="link-desc">Manage images & uploads</span>
 											</div>
 										</a>
 									</div>
 								</div>
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/writing-guide"><i class="fas fa-pen-fancy"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Writing
-														Guide</span><span class="menu-item-desc">Improve your
-														writing</span></span></a></li>
-										<li><a href="/seo-tips"><i class="fas fa-search"></i> <span
-													class="menu-item-content"><span class="menu-item-title">SEO
-														Tips</span><span class="menu-item-desc">Boost your
-														visibility</span></span></a></li>
-										<li><a href="/templates"><i class="fas fa-file-alt"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Templates</span><span
-														class="menu-item-desc">Ready-to-use
-														formats</span></span></a>
-										</li>
-										<li><a href="/community"><i class="fas fa-users"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Community</span><span
-														class="menu-item-desc">Connect with
-														writers</span></span></a>
-										</li>
-										<li><a href="/analytics"><i class="fas fa-chart-pie"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Analytics</span><span
-														class="menu-item-desc">Track your
-														performance</span></span></a>
-										</li>
-										<li><a href="/marketplace"><i class="fas fa-store"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Marketplace</span><span
-														class="menu-item-desc">Sell your
-														content</span></span></a></li>
-									</ul>
+
+								<div class="manage-column">
+									<h6 class="column-header">Growth & Stats</h6>
+									<div class="menu-group">
+										<a href="/stats" class="menu-link-item">
+											<div class="icon-box green"><i class="fas fa-chart-line"></i></div>
+											<div class="text-box">
+												<span class="link-title">Traffic Overview</span>
+												<span class="link-desc">Real-time pageviews & trends</span>
+											</div>
+										</a>
+										<a href="/seo-tools" class="menu-link-item">
+											<div class="icon-box orange"><i class="fas fa-search"></i></div>
+											<div class="text-box">
+												<span class="link-title">SEO Insights</span>
+												<span class="link-desc">Keywords & search ranking</span>
+											</div>
+										</a>
+										<a href="/audience" class="menu-link-item">
+											<div class="icon-box teal"><i class="fas fa-users"></i></div>
+											<div class="text-box">
+												<span class="link-title">Audience</span>
+												<span class="link-desc">Subscribers & demographics</span>
+											</div>
+										</a>
+									</div>
 								</div>
+
+								<div class="manage-column">
+									<h6 class="column-header">Community</h6>
+									<div class="menu-group">
+										<a href="/comments" class="menu-link-item">
+											<div class="icon-box pink"><i class="fas fa-comments"></i></div>
+											<div class="text-box">
+												<span class="link-title">Comments</span>
+												<span class="link-desc">Moderate discussions</span>
+											</div>
+										</a>
+										<a href="/newsletter" class="menu-link-item">
+											<div class="icon-box indigo"><i class="fas fa-paper-plane"></i></div>
+											<div class="text-box">
+												<span class="link-title">Newsletter</span>
+												<span class="link-desc">Email your subscribers</span>
+											</div>
+										</a>
+										<a href="/polls" class="menu-link-item">
+											<div class="icon-box cyan"><i class="fas fa-poll"></i></div>
+											<div class="text-box">
+												<span class="link-title">Reader Polls</span>
+												<span class="link-desc">Engage with questions</span>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="manage-column">
+									<h6 class="column-header">Settings</h6>
+									<div class="menu-group">
+										<a href="/profile" class="menu-link-item">
+											<div class="icon-box slate"><i class="fas fa-user-cog"></i></div>
+											<div class="text-box">
+												<span class="link-title">Profile</span>
+												<span class="link-desc">Edit bio & avatar</span>
+											</div>
+										</a>
+										<a href="/earnings" class="menu-link-item">
+											<div class="icon-box gold"><i class="fas fa-coins"></i></div>
+											<div class="text-box">
+												<span class="link-title">Earnings</span>
+												<span class="link-desc">Payouts & monetization</span>
+											</div>
+										</a>
+										<a href="/security" class="menu-link-item">
+											<div class="icon-box red"><i class="fas fa-shield-alt"></i></div>
+											<div class="text-box">
+												<span class="link-title">Security</span>
+												<span class="link-desc">Password & 2FA</span>
+											</div>
+										</a>
+									</div>
+								</div>
+
 							</div>
 						</div>
 					</li>
-					<li class="nav-item mega-menu-item">
-						<a class="nav-link" href="/content-management">Manage </a>
-						<div class="mega-menu mega-menu-compact">
-							<div class="mega-menu-content">
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/my-articles"><i class="fas fa-file-alt"></i> <span
-													class="menu-item-content"><span class="menu-item-title">My
-														Articles</span><span class="menu-item-desc">Manage your
-														published articles</span></span> <span
-													class="badge">24</span></a></li>
-										<li><a href="/my-blogs"><i class="fas fa-blog"></i> <span
-													class="menu-item-content"><span class="menu-item-title">My
-														Blogs</span><span class="menu-item-desc">Your blog
-														posts</span></span> <span class="badge">18</span></a></li>
-										<li><a href="/my-stories"><i class="fas fa-book-open"></i> <span
-													class="menu-item-content"><span class="menu-item-title">My
-														Stories</span><span class="menu-item-desc">Personal
-														narratives</span></span> <span class="badge">9</span></a></li>
-										<li><a href="/drafts"><i class="fas fa-edit"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Drafts</span><span
-														class="menu-item-desc">Unpublished content</span></span> <span
-													class="badge">12</span></a></li>
-										<li><a href="/scheduled"><i class="fas fa-calendar-alt"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Scheduled</span><span
-														class="menu-item-desc">Future publications</span></span> <span
-													class="badge">5</span></a></li>
-									</ul>
-								</div>
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/stats"><i class="fas fa-chart-bar"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Statistics</span><span
-														class="menu-item-desc">Overall performance</span></span></a>
-										</li>
-										<li><a href="/views"><i class="fas fa-eye"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Views &
-														Engagement</span><span class="menu-item-desc">Track reader
-														interaction</span></span></a></li>
-										<li><a href="/revenue"><i class="fas fa-dollar-sign"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Revenue</span><span
-														class="menu-item-desc">Earnings dashboard</span></span></a></li>
-										<li><a href="/audience"><i class="fas fa-users"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Audience
-														Insights</span><span class="menu-item-desc">Know your
-														readers</span></span></a></li>
-									</ul>
-								</div>
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/profile"><i class="fas fa-user"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Profile
-														Settings</span><span class="menu-item-desc">Update your
-														profile</span></span></a></li>
-										<li><a href="/notifications"><i class="fas fa-bell"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Notifications</span><span
-														class="menu-item-desc">Manage alerts</span></span></a></li>
-										<li><a href="/privacy"><i class="fas fa-shield-alt"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Privacy</span><span
-														class="menu-item-desc">Control your data</span></span></a></li>
-										<li><a href="/account"><i class="fas fa-cog"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Account
-														Settings</span><span class="menu-item-desc">General
-														preferences</span></span></a></li>
-										<li><a href="/billing"><i class="fas fa-credit-card"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Billing &
-														Subscription</span><span class="menu-item-desc">Payment
-														methods</span></span></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</li>
+					<!-- CATEGORIES MEGA MENU - Design 3: Colorful Grid -->
 					<li class="nav-item mega-menu-item">
 						<a class="nav-link" href="/categories">Categories </a>
-						<div class="mega-menu mega-menu-compact">
-							<div class="mega-menu-content mega-menu-grid-3">
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/category/arboriculture"><i class="fas fa-tree"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Arboriculture</span><span
-														class="menu-item-desc">Tree care and
-														cultivation</span></span><span class="badge">150+</span></a>
-										</li>
-										<li><a href="/category/art-culture"><i class="fas fa-palette"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Art &
-														Culture</span><span class="menu-item-desc">Creative
-														expressions</span></span><span class="badge">320+</span></a>
-										</li>
-										<li><a href="/category/botany"><i class="fas fa-seedling"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Botany &
-														Soil Science</span><span class="menu-item-desc">Plant biology
-														and ecosystems</span></span><span class="badge">185+</span></a>
-										</li>
-									</ul>
+						<div class="mega-menu mega-categories">
+							<div class="categories-container">
+								<div class="categories-header">
+									<h3>Explore Categories</h3>
+									<a href="/all-categories" class="categories-view-all">View All <i
+											class="fas fa-arrow-right"></i></a>
 								</div>
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/category/business"><i class="fas fa-briefcase"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Business
-														Tips</span><span class="menu-item-desc">Entrepreneurship
-														advice</span></span><span class="badge">450+</span></a></li>
-										<li><a href="/category/finance"><i class="fas fa-landmark"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Finance &
-														Government</span><span class="menu-item-desc">Money and policy
-														insights</span></span><span class="badge">380+</span></a></li>
-										<li><a href="/category/mental-health"><i class="fas fa-leaf"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Mental
-														Health & Green Spaces</span><span
-														class="menu-item-desc">Wellness and nature</span></span><span
-													class="badge">290+</span></a></li>
-									</ul>
-								</div>
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/category/technology"><i class="fas fa-laptop-code"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Technology &
-														AI</span><span class="menu-item-desc">Latest tech
-														trends</span></span><span class="badge">520+</span></a></li>
-										<li><a href="/category/tree-worker"><i class="fas fa-hard-hat"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Tree
-														Worker</span><span class="menu-item-desc">Professional tree
-														care</span></span><span class="badge">125+</span></a></li>
-										<li><a href="/category/urban-planning"><i class="fas fa-city"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Urban
-														Planning & Design</span><span class="menu-item-desc">Sustainable
-														city development</span></span><span
-													class="badge">210+</span></a></li>
-									</ul>
+								<div class="categories-grid">
+									<a href="/category/arboriculture" class="category-tile"
+										style="--tile-color: #22c55e;">
+										<div class="category-tile-icon"><i class="fas fa-tree"></i></div>
+										<div class="category-tile-content">
+											<h4>Arboriculture</h4>
+											<p>Tree care and cultivation</p>
+										</div>
+										<span class="category-tile-count">150+</span>
+									</a>
+									<a href="/category/art-culture" class="category-tile"
+										style="--tile-color: #ec4899;">
+										<div class="category-tile-icon"><i class="fas fa-palette"></i></div>
+										<div class="category-tile-content">
+											<h4>Art & Culture</h4>
+											<p>Creative expressions</p>
+										</div>
+										<span class="category-tile-count">320+</span>
+									</a>
+									<a href="/category/botany" class="category-tile" style="--tile-color: #84cc16;">
+										<div class="category-tile-icon"><i class="fas fa-seedling"></i></div>
+										<div class="category-tile-content">
+											<h4>Botany & Soil</h4>
+											<p>Plant biology</p>
+										</div>
+										<span class="category-tile-count">185+</span>
+									</a>
+									<a href="/category/business" class="category-tile" style="--tile-color: #3b82f6;">
+										<div class="category-tile-icon"><i class="fas fa-briefcase"></i></div>
+										<div class="category-tile-content">
+											<h4>Business</h4>
+											<p>Entrepreneurship</p>
+										</div>
+										<span class="category-tile-count">450+</span>
+									</a>
+									<a href="/category/finance" class="category-tile" style="--tile-color: #f59e0b;">
+										<div class="category-tile-icon"><i class="fas fa-landmark"></i></div>
+										<div class="category-tile-content">
+											<h4>Finance</h4>
+											<p>Money insights</p>
+										</div>
+										<span class="category-tile-count">380+</span>
+									</a>
+									<a href="/category/mental-health" class="category-tile"
+										style="--tile-color: #14b8a6;">
+										<div class="category-tile-icon"><i class="fas fa-leaf"></i></div>
+										<div class="category-tile-content">
+											<h4>Mental Health</h4>
+											<p>Wellness & nature</p>
+										</div>
+										<span class="category-tile-count">290+</span>
+									</a>
+									<a href="/category/technology" class="category-tile" style="--tile-color: #8b5cf6;">
+										<div class="category-tile-icon"><i class="fas fa-laptop-code"></i></div>
+										<div class="category-tile-content">
+											<h4>Technology</h4>
+											<p>Latest tech trends</p>
+										</div>
+										<span class="category-tile-count">520+</span>
+									</a>
+									<a href="/category/tree-worker" class="category-tile"
+										style="--tile-color: #f97316;">
+										<div class="category-tile-icon"><i class="fas fa-hard-hat"></i></div>
+										<div class="category-tile-content">
+											<h4>Tree Worker</h4>
+											<p>Professional care</p>
+										</div>
+										<span class="category-tile-count">125+</span>
+									</a>
+									<a href="/category/urban-planning" class="category-tile"
+										style="--tile-color: #6366f1;">
+										<div class="category-tile-icon"><i class="fas fa-city"></i></div>
+										<div class="category-tile-content">
+											<h4>Urban Planning</h4>
+											<p>City development</p>
+										</div>
+										<span class="category-tile-count">210+</span>
+									</a>
 								</div>
 							</div>
 						</div>
 					</li>
+					<!-- ABOUT MEGA MENU - Design 4: Clean Minimal -->
 					<li class="nav-item mega-menu-item">
 						<a class="nav-link" href="/about">About </a>
-						<div class="mega-menu mega-menu-compact">
-							<div class="mega-menu-content mega-menu-grid-3">
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/about"><i class="fas fa-info-circle"></i> <span
-													class="menu-item-content"><span class="menu-item-title">About
-														Us</span><span class="menu-item-desc">Learn about our mission
-														and values</span></span></a></li>
-										<li><a href="/how-it-works"><i class="fas fa-cogs"></i> <span
-													class="menu-item-content"><span class="menu-item-title">How It
-														Works</span><span class="menu-item-desc">Discover our platform
-														features</span></span></a></li>
-										<li><a href="/team"><i class="fas fa-users"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Our
-														Team</span><span class="menu-item-desc">Meet the people behind
-														TestingWork</span></span></a></li>
-										<li><a href="/careers"><i class="fas fa-briefcase"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Careers</span><span
-														class="menu-item-desc">Join our growing team</span></span></a>
-										</li>
-									</ul>
-								</div>
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/faq"><i class="fas fa-question-circle"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">FAQ</span><span
-														class="menu-item-desc">Frequently asked
-														questions</span></span></a></li>
-										<li><a href="/help"><i class="fas fa-life-ring"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Help
-														Center</span><span class="menu-item-desc">Get support and
-														guidance</span></span></a></li>
-										<li><a href="/contact"><i class="fas fa-envelope"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Contact
-														Us</span><span class="menu-item-desc">Reach out to our
-														team</span></span></a></li>
-										<li><a href="/sitemap"><i class="fas fa-sitemap"></i> <span
-													class="menu-item-content"><span
-														class="menu-item-title">Sitemap</span><span
-														class="menu-item-desc">Navigate our website</span></span></a>
-										</li>
-									</ul>
-								</div>
-								<div class="mega-menu-column">
-									<ul class="mega-menu-list">
-										<li><a href="/privacy-policy"><i class="fas fa-shield-alt"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Privacy
-														Policy</span><span class="menu-item-desc">How we protect your
-														data</span></span></a></li>
-										<li><a href="/terms"><i class="fas fa-file-contract"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Terms &
-														Conditions</span><span class="menu-item-desc">User agreement and
-														terms</span></span></a></li>
-										<li><a href="/cookie-policy"><i class="fas fa-cookie"></i> <span
-													class="menu-item-content"><span class="menu-item-title">Cookie
-														Policy</span><span class="menu-item-desc">Cookie usage
-														information</span></span></a></li>
-									</ul>
+						<div class="mega-menu mega-about">
+							<div class="about-container">
+								<div class="about-main">
+									<!-- Company Info -->
+									<div class="about-company">
+										<div class="about-company-header">
+											<div class="about-logo">
+												<i class="fas fa-pen-nib"></i>
+											</div>
+											<div>
+												<h3>TestingWork</h3>
+												<p>The platform for writers & readers</p>
+											</div>
+										</div>
+										<p class="about-description">Join thousands of writers sharing their knowledge,
+											stories, and expertise with readers worldwide.</p>
+										<div class="about-stats">
+											<div class="about-stat"><strong>62K+</strong><span>Writers</span></div>
+											<div class="about-stat"><strong>485K+</strong><span>Readers</span></div>
+											<div class="about-stat"><strong>28K+</strong><span>Articles</span></div>
+										</div>
+									</div>
+									<!-- Links Grid -->
+									<div class="about-links-grid">
+										<div class="about-links-section">
+											<h4>Company</h4>
+											<a href="/about"><i class="fas fa-info-circle"></i> About Us</a>
+											<a href="/team"><i class="fas fa-users"></i> Our Team</a>
+											<a href="/careers"><i class="fas fa-briefcase"></i> Careers</a>
+											<a href="/press"><i class="fas fa-newspaper"></i> Press</a>
+										</div>
+										<div class="about-links-section">
+											<h4>Support</h4>
+											<a href="/help"><i class="fas fa-life-ring"></i> Help Center</a>
+											<a href="/faq"><i class="fas fa-question-circle"></i> FAQ</a>
+											<a href="/contact"><i class="fas fa-envelope"></i> Contact</a>
+											<a href="/feedback"><i class="fas fa-comment"></i> Feedback</a>
+										</div>
+										<div class="about-links-section">
+											<h4>Legal</h4>
+											<a href="/privacy"><i class="fas fa-shield-alt"></i> Privacy</a>
+											<a href="/terms"><i class="fas fa-file-contract"></i> Terms</a>
+											<a href="/cookies"><i class="fas fa-cookie-bite"></i> Cookies</a>
+											<a href="/licenses"><i class="fas fa-certificate"></i> Licenses</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
