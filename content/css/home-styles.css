@@ -2760,234 +2760,211 @@
 }
 
 /* ==================== ABOUT MEGA MENU - Design 4 ==================== */
-.mega-about {
-  padding: 0 !important;
+/* =========================================
+   ABOUT MENU - ULTRA MODERN LAYOUT
+   ========================================= */
+
+/* 1. Main Container */
+.mega-about-ultra {
+    padding: 0 !important;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #f1f5f9;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
 }
 
-.about-container {
-  padding: 1.25rem;
+.about-ultra-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.about-main {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 1.5rem;
+/* 2. TOP BANNER (Brand Identity) */
+.ultra-brand-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #f1f5f9;
 }
 
-.about-company {
-  background: #f8fafc;
-  border-radius: 12px;
-  padding: 1.25rem;
-  border: 1px solid #e2e8f0;
-}
-
-.about-company-header {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-.about-logo {
-  width: 42px;
-  height: 42px;
-  background: linear-gradient(135deg, #0071bc, #29abe2);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.1rem;
-}
-
-.about-company-header h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin: 0;
-}
-
-.about-company-header p {
-  font-size: 0.7rem;
-  color: #64748b;
-  margin: 0.1rem 0 0;
-}
-
-.about-description {
-  font-size: 0.75rem;
-  color: #475569;
-  line-height: 1.5;
-  margin: 0 0 0.75rem;
-}
-
-.about-stats {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.about-stat {
-  flex: 1;
-  text-align: center;
-  padding: 0.6rem 0.5rem;
-  background: #fff;
-  border-radius: 8px;
-  border: 1px solid #e2e8f0;
-}
-
-.about-stat strong {
-  display: block;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #0071bc;
-  line-height: 1;
-}
-
-.about-stat span {
-  font-size: 0.6rem;
-  color: #64748b;
-  font-weight: 500;
-  margin-top: 0.15rem;
-  display: block;
-  text-transform: uppercase;
-}
-
-.about-links-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.about-links-section h4 {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #64748b;
-  margin: 0 0 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.about-links-section a {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 0;
-  color: #475569;
-  font-size: 0.8rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.15s;
-}
-
-.about-links-section a:hover {
-  color: #0071bc;
-  padding-left: 0.25rem;
-}
-
-.about-links-section a i {
-  width: 14px;
-  font-size: 0.7rem;
-  color: #94a3b8;
-  transition: all 0.15s;
-}
-
-.about-links-section a:hover i {
-  color: #0071bc;
-}
-
-/* ==================== RESPONSIVE STYLES FOR ALL NEW MENUS ==================== */
-@media (max-width: 991.98px) {
-  .browse-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap: 1.25rem;
-    padding: 1.25rem;
-  }
-
-  .browse-hero {
-    grid-column: 1;
-    grid-row: auto;
-    min-height: 200px;
-    padding: 1.5rem;
-  }
-
-  .browse-hero h3 { font-size: 1.25rem; }
-
-  .browse-types {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75rem;
-  }
-
-  .browse-actions {
-    grid-column: 1;
-    justify-content: center;
-  }
-
-  .manage-stats-row {
-    flex-wrap: wrap;
-  }
-
-  .manage-stat {
-    flex: 1 1 45%;
-    min-width: 140px;
-  }
-
-  .manage-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .categories-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-main {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .about-links-grid {
-    grid-template-columns: repeat(3, 1fr);
+.brand-left {
+    display: flex;
+    align-items: center;
     gap: 1rem;
-  }
 }
 
-@media (max-width: 575.98px) {
-  .browse-types {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .browse-type-card {
-    padding: 1rem;
-  }
-
-  .browse-type-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 1rem;
-  }
-
-  .manage-stats-row {
-    gap: 0.75rem;
-  }
-
-  .manage-stat {
-    flex: 1 1 100%;
-  }
-
-  .about-links-grid {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-
-  .about-stats {
-    flex-wrap: wrap;
-  }
-
-  .about-stat {
-    flex: 1 1 45%;
-  }
+/* LOGO FIX: Forces transparency on the image */
+.ultra-logo-img {
+    height: 42px;
+    width: auto;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    display: block;
 }
 
+.brand-text h3 {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0;
+    line-height: 1;
+}
+
+.brand-text p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 4px 0 0 0;
+}
+
+.brand-right {
+    display: flex;
+    gap: 12px;
+}
+
+/* Buttons */
+.btn-ultra-outline {
+    padding: 8px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    color: #475569;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.btn-ultra-outline:hover {
+    border-color: #0071bc;
+    color: #0071bc;
+}
+
+.btn-ultra-primary {
+    padding: 8px 16px;
+    background: #0071bc;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn-ultra-primary:hover {
+    background: #005a96;
+}
+
+/* 3. BOTTOM GRID (Links with Icons) */
+.ultra-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.ultra-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+}
+
+.ultra-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    padding: 6px;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.ultra-link:hover {
+    background: #f8fafc;
+    transform: translateX(4px);
+}
+
+.ultra-link span {
+    color: #475569;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.ultra-link:hover span {
+    color: #0071bc;
+}
+
+/* Icons */
+.u-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+}
+
+/* Icon Colors */
+.u-icon.blue    { background: #eff6ff; color: #3b82f6; }
+.u-icon.purple  { background: #f5f3ff; color: #8b5cf6; }
+.u-icon.pink    { background: #fdf2f8; color: #ec4899; }
+.u-icon.green   { background: #f0fdf4; color: #22c55e; }
+.u-icon.orange  { background: #fff7ed; color: #f97316; }
+.u-icon.teal    { background: #ecfeff; color: #06b6d4; }
+.u-icon.slate   { background: #f1f5f9; color: #64748b; }
+.u-icon.twitter { background: #000; color: #fff; }
+.u-icon.linkedin{ background: #0077b5; color: #fff; }
+.u-icon.mail    { background: #fff1f2; color: #e11d48; }
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+   ========================================= */
+@media (max-width: 991px) {
+    .mega-menu.mega-about-ultra {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .about-ultra-container {
+        padding: 1.5rem;
+    }
+
+    /* Stack Top Banner */
+    .ultra-brand-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    
+    .brand-right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .btn-ultra-outline, .btn-ultra-primary {
+        flex: 1;
+        text-align: center;
+    }
+
+    /* Stack Bottom Grid */
+    .ultra-nav-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .ultra-link {
+        padding: 8px 0;
+        margin-bottom: 0.5rem;
+    }
+}
 /* ==================== END NEW MEGA MENU DESIGNS ==================== */
 
 /* Mega Menu CTA Section */
