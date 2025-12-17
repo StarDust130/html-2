@@ -2582,9 +2582,6 @@
 
 /* ==================== MANAGE MEGA MENU - Design 2 ==================== */
 /* Container Reset */
-/* =========================================
-   FREELANCER-STYLE LIGHT MEGA MENU
-   ========================================= */
 
 /* 1. Container Setup */
 .mega-manage-light {
@@ -2766,130 +2763,183 @@
 }
 
 /* ==================== CATEGORIES MEGA MENU - Design 3 ==================== */
-.mega-categories {
+/* --- 1. The Container (Full Width / No Wasted Space) --- */
+.mega-menu.mega-categories-light {
   padding: 0 !important;
+  width: 100%; /* Forces menu to be full screen width */
+  left: 0;
+  margin-top: 0;
+  background: #ffffff;
+  border-top: 1px solid #f1f5f9;
+  box-shadow: 0 20px 40px -5px rgba(15, 23, 42, 0.08);
 }
 
-.categories-container {
-  padding: 1.25rem;
-}
-
-.categories-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-
-.categories-header h3 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #1e293b;
-  margin: 0;
-}
-
-.categories-view-all {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  color: #0071bc;
-  font-weight: 600;
-  font-size: 0.75rem;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.categories-view-all:hover {
-  gap: 0.5rem;
-}
-
-.categories-view-all i {
-  transition: transform 0.2s;
-  font-size: 0.65rem;
-}
-
-.categories-view-all:hover i {
-  transform: translateX(2px);
-}
-
-.categories-grid {
+.categories-light-container {
   display: grid;
+  /* 3 Columns that stretch to fill the space */
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.6rem;
+  gap: 1.5rem; /* Nice gap between cards */
+
+  /* FIX: Width 100% to remove side whitespace */
+  width: 100%;
+  max-width: 1400px; /* Cap it only on massive 4k screens */
+  margin: 0 auto; /* Centers it if screen is >1400px */
+
+  padding: 2rem; /* Clean even padding on all sides */
+  box-sizing: border-box; /* Ensures padding doesn't break width */
 }
 
-.category-tile {
+/* --- 2. The Card (Flexible & Stretchy) --- */
+.cat-card-item {
   display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.7rem 0.9rem;
-  background: #f8fafc;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.category-tile:hover {
+  align-items: flex-start;
+  gap: 15px;
+  padding: 16px; /* slightly larger click area */
   background: #fff;
-  border-color: var(--tile-color, #0071bc);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  height: 100%; /* Ensures all cards in a row are same height */
+  position: relative;
 }
 
-.category-tile-icon {
-  width: 36px;
-  height: 36px;
-  min-width: 36px;
-  background: var(--tile-color, #0071bc);
-  border-radius: 8px;
+.cat-card-item:hover {
+  transform: translateY(-3px);
+  border-color: #3b82f6;
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.15); /* Blue tinted shadow */
+}
+
+/* --- 3. Icon (Left) --- */
+.cat-icon-box {
+  width: 44px;
+  height: 44px;
+  min-width: 44px; /* Prevents squishing */
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  font-size: 0.9rem;
-  transition: transform 0.2s;
+  font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
-.category-tile:hover .category-tile-icon {
-  transform: scale(1.08);
-}
-
-.category-tile-content {
+/* --- 4. Content (Right) --- */
+.cat-text-box {
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  min-width: 0;
+  min-width: 0; /* Prevents text overflow issues */
 }
 
-.category-tile-content h4 {
+.cat-link-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* The Arrow */
+.cat-link-title i {
+  font-size: 0.75rem;
+  color: #cbd5e1;
+  margin-left: 10px;
+  transition: all 0.2s;
+}
+
+.cat-card-item:hover .cat-link-title i {
+  color: #3b82f6;
+  transform: translateX(4px);
+}
+
+.cat-link-desc {
   font-size: 0.8rem;
-  font-weight: 600;
-  color: #1e293b;
-  margin: 0 0 0.1rem;
-}
-
-.category-tile:hover .category-tile-content h4 {
-  color: var(--tile-color, #0071bc);
-}
-
-.category-tile-content p {
-  font-size: 0.65rem;
   color: #64748b;
-  margin: 0;
+  line-height: 1.4;
+  font-weight: 500;
+  /* Clean text truncation */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.category-tile-count {
-  background: #e2e8f0;
-  color: #475569;
-  padding: 0.2rem 0.5rem;
-  border-radius: 4px;
-  font-size: 0.65rem;
-  font-weight: 600;
+/* --- 5. Colors --- */
+.cat-icon-box.blue {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+.cat-icon-box.gold {
+  background: #fefce8;
+  color: #ca8a04;
+}
+.cat-icon-box.indigo {
+  background: #eef2ff;
+  color: #6366f1;
+}
+.cat-icon-box.teal {
+  background: #ecfeff;
+  color: #06b6d4;
+}
+.cat-icon-box.green {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+.cat-icon-box.orange {
+  background: #fff7ed;
+  color: #f97316;
+}
+.cat-icon-box.pink {
+  background: #fdf2f8;
+  color: #ec4899;
+}
+.cat-icon-box.purple {
+  background: #f5f3ff;
+  color: #8b5cf6;
+}
+.cat-icon-box.slate {
+  background: #f8fafc;
+  color: #64748b;
 }
 
-.category-tile:hover .category-tile-count {
-  background: var(--tile-color, #0071bc);
-  color: #fff;
+/* --- 6. Mobile Layout (Fixing "look so bad") --- */
+@media (max-width: 991px) {
+  .categories-light-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablet */
+    padding: 1.5rem;
+    gap: 1rem;
+  }
 }
 
+@media (max-width: 600px) {
+  .categories-light-container {
+    grid-template-columns: 1fr; /* Stack 1 per row on mobile */
+    padding: 1rem;
+    gap: 0.75rem;
+  }
+
+  .cat-card-item {
+    padding: 12px;
+  }
+
+  .cat-icon-box {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    font-size: 1rem;
+  }
+
+  .cat-link-title {
+    font-size: 0.9rem;
+  }
+  .cat-link-desc {
+    font-size: 0.75rem;
+  }
+}
 /* ==================== ABOUT MEGA MENU - Design 4 ==================== */
 /* =========================================
    ABOUT MENU - ULTRA MODERN LAYOUT
