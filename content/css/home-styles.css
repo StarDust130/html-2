@@ -4542,8 +4542,6 @@
 }
 
 /* ========== FOOTER ========== */
-
-/* ========== FOOTER ========== */
 .stats-section {
   position: relative;
   background: radial-gradient(
@@ -5591,4 +5589,100 @@
     font-size: 12pt;
     line-height: 1.5;
   }
+}
+
+
+/* --- Brand Variables (Adjust based on your exact logo blue) --- */
+:root {
+    --brand-blue: #0ea5e9; /* The blue from your logo/buttons */
+    --brand-dark: #0f172a; /* Dark text */
+    --brand-light: #f0f9ff; /* Very light blue background */
+    --text-muted: #64748b;
+}
+
+/* --- Section Styling --- */
+.badge-pulse {
+    background-color: var(--brand-light);
+    color: var(--brand-blue);
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.stats-title {
+    font-weight: 800;
+    color: var(--brand-dark);
+    margin-bottom: 0.5rem;
+}
+
+.stats-subtitle {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+/* --- Grid & Cards --- */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stat-card {
+    background: #fff;
+    border: 1px solid #e2e8f0; /* Subtle border instead of shadow */
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    border-color: var(--brand-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Unified Icon Styling --- */
+.theme-icon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--brand-light); /* Light Blue Background */
+    color: var(--brand-blue); /* Brand Blue Icon */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+/* --- Typography --- */
+.stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--brand-dark);
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.stat-hint {
+    font-size: 0.8rem;
+    color: #10b981; /* A cleaner, darker green for growth */
+    font-weight: 500;
+    margin-bottom: 0;
 }
